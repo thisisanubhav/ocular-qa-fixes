@@ -32,6 +32,8 @@ try{
   if(width<1100){
    await c.evaluate(`document.querySelector('.menu-toggle').focus()`);await key('Enter','Enter','\r');
    await check(`Keyboard opens menu at ${width}px`,`document.querySelector('.menu-toggle').getAttribute('aria-expanded')==='true'`);
+   await check(`Opening menu moves keyboard focus inside at ${width}px`,`document.activeElement.getAttribute('aria-controls')==='nav-Research'`);
+   await key('Tab');await check(`Tab reaches Products at ${width}px`,`document.activeElement.getAttribute('aria-controls')==='nav-Products'`);
    await check(`Careers is reachable at ${width}px`,`(()=>{const r=document.querySelector('.careers-link').getBoundingClientRect();return r.width>0&&r.left>=0&&r.right<=innerWidth})()`);
    await c.evaluate(`document.querySelector('[aria-controls="nav-Products"]').focus()`);await key('Enter','Enter','\r');
    await check(`Keyboard product submenu at ${width}px`,`!document.querySelector('#nav-Products').hidden`);
