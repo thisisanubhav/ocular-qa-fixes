@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
 import {writeFile} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
-import {connect} from './cdp.mjs';
-const c=await connect();const results=[];const errors=[];const requests=[];
+import {chromium} from 'playwright';
+const browser=await chromium.launch({headless:true,channel:'chrome'});
+const page=await browser.newPage({deviceScaleFactor:1});
+const session=await page.context().newCDPSession(page);
+const c={send:(method,params)=>session.send(method,params),on:(event,handler)=>session.on(event,handler),evaluate:expression=>page.evaluate(expression),wait:expression=>page.waitForFunction(expression),navigate:url=>page.goto(url,{waitUntil:'networkidle'}),viewport:(width,height)=>page.setViewportSize({width,height}),close:()=>browser.close()};const results=[];const errors=[];const requests=[];
 c.on('Runtime.exceptionThrown',event=>errors.push(event.exceptionDetails.text));
 c.on('Network.requestWillBeSent',event=>{if(event.request.method==='POST')requests.push({url:event.request.url,payload:JSON.parse(event.request.postData||'{}')});});
 await c.send('Network.enable');
@@ -11,7 +14,7 @@ const commit=file=>{execFileSync('git',['add','--',file]);try{execFileSync('git'
 const save=async(file,content)=>{await writeFile(file,content);commit(file);};
 const shot=async name=>{await c.evaluate('document.fonts.ready.then(()=>true)');const r=await c.send('Page.captureScreenshot',{format:'png'});await save(`evidence/after/${name}.png`,Buffer.from(r.data,'base64'));};
 const go=async route=>{await c.navigate('http://localhost:3000'+route);await c.wait('document.querySelector("#main") && document.querySelector(".site-footer")');};
-const key=async(key,code=key,text)=>{await c.send('Input.dispatchKeyEvent',{type:'keyDown',key,code,...(text?{text,unmodifiedText:text}:{}),windowsVirtualKeyCode:key==='Enter'?13:key==='Tab'?9:key==='Escape'?27:0});await c.send('Input.dispatchKeyEvent',{type:'keyUp',key,code});};
+const key=async(key)=>page.keyboard.press(key);
 try{
  for(const width of [320,390,768,1024,1440]){
   await c.viewport(width,width===768?1024:900);
@@ -70,7 +73,7 @@ try{
  }
  await go('/blog');await c.evaluate(`document.querySelector('#privacy-open').click()`);await check('Privacy dialog opens',`document.querySelector('#privacy-dialog').open`);await key('Escape');await check('Privacy dialog closes with Escape',`!document.querySelector('#privacy-dialog').open`);
  assert.deepEqual(errors,[]);results.push({name:'No uncaught browser exceptions',passed:true});
- await save('evidence/after/results.json',JSON.stringify({date:new Date().toISOString(),browser:'Superset Chromium pane via CDP',widths:[320,390,768,1024,1440],results,errors,productionSubmissions:0},null,2));
+ await save('evidence/after/results.json',JSON.stringify({date:new Date().toISOString(),browser:'Isolated Chromium (Playwright, installed Chrome channel)',widths:[320,390,768,1024,1440],results,errors,productionSubmissions:0},null,2));
  console.log(`${results.length} browser assertions passed; evidence committed per file.`);
  await go('/');await c.viewport(1440,900);
-}catch(error){console.error(error);await save('evidence/after/failure.json',JSON.stringify({message:error.message,results,errors},null,2));process.exitCode=1;}finally{c.close();}
+}catch(error){console.error(error);await save('evidence/after/failure.json',JSON.stringify({message:error.message,results,errors},null,2));process.exitCode=1;}finally{await c.close();}
