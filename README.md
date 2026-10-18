@@ -52,19 +52,3 @@ npm run test:browser # Keep the local dev server running
 
 Evidence scripts commit changed evidence files individually, following this project’s requested workflow. They require a configured Git identity and clean index.
 
-## Main files
-
-- `src/components.js`, `src/styles.css`: shared navigation, accessible links, responsive layouts.
-- `src/app.js`, `src/core.js`: pages, inquiry context, payloads, filtering, and validation.
-- `src/benchmarks.json`: shared benchmark score snapshot.
-- `src/careers.js`: role-scoped application drafts.
-- `tests/`, `scripts/browser-qa.mjs`: regression coverage.
-
-## Limits
-
-- Contact submissions use a local mock. Application tests send no data or résumé uploads. Nothing was deployed.
-- Application drafts last while the Careers page remains open; a confirmed reload or departure clears them.
-- Content and scores are snapshots; official reports, legal pages, and current job listings remain external.
-- Tested in Chromium; physical devices, Safari, Firefox, and screen-reader speech remain unverified.
-
-Reference: [Ocular’s public website](https://www.useocular.com/). This repository is not the official Ocular source.
