@@ -1,0 +1,90 @@
+{
+  "message": "Keyboard opens menu at 320px: false",
+  "results": [
+    {
+      "name": "home fits 320px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 320px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 320px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 320px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 320px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 320px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 320px",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
