@@ -1,0 +1,24 @@
+{
+  "url": "http://localhost:3000/api/contact",
+  "payload": {
+    "firstName": "QA",
+    "lastName": "Tester",
+    "email": "qa@example.test",
+    "phone": "",
+    "jobTitle": "Researcher",
+    "company": "Local QA",
+    "companyWebsite": "",
+    "companyType": "Startup",
+    "subject": "Edited Hindi samples — QA only",
+    "dataVolume": "",
+    "message": "Local browser verification. Do not deliver.",
+    "otherInterest": "",
+    "otherUseCase": "",
+    "interests": [
+      "Browse our Off-the-shelf Datasets"
+    ],
+    "useCases": [
+      "Pre-training"
+    ]
+  }
+}
