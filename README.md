@@ -45,7 +45,6 @@ The browser suite launches an isolated Chrome profile. It never attaches to pers
 | Missing inquiry context | Shared query parser fills an editable subject; payload includes its current value | Dataset CTA flow, five product inquiry flows, edited payload received by local mock, direct/encoded/unsafe-text URL cases |
 | Unnamed home links | Both anchors use `aria-label="Ocular AI — Home"`; decorative logo SVGs are hidden from accessibility APIs | Chromium accessibility tree exposes both named links; no unnamed homepage links |
 | Conflicting model count | Homepage, CTA badge, overview, and leaderboard derive counts from the same model arrays | Diarization displays 12 throughout; STT uses its 20 entries; metric rankings verified |
-
 | Application draft silently erased | Keep each role’s form mounted above the details/application switch | All fields and a synthetic résumé preserved at five widths; close/reopen, role isolation, cancelled/confirmed discard, and reload warning verified |
 
 ## Source map
