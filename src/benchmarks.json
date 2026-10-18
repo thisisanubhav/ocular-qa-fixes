@@ -1,0 +1,286 @@
+{
+  "diarization": [
+    {
+      "name": "Pyannote Community-1",
+      "url": "https://huggingface.co/pyannote/speaker-diarization-community-1",
+      "scores": {
+        "DER": 27.98,
+        "DER ±0.25 s collar": 18.66,
+        "JER": 26.38,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "DiariZen WavLM Large s80 MD v2",
+      "url": "https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-md-v2",
+      "scores": {
+        "DER": 28.16,
+        "DER ±0.25 s collar": 19.09,
+        "JER": 26.16,
+        "Speaker Count": 0
+      }
+    },
+    {
+      "name": "Nemotron 3 Diarization",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "scores": {
+        "DER": 28.21,
+        "DER ±0.25 s collar": 21.39,
+        "JER": 26.64,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Scribe v2",
+      "url": "https://openrouter.ai/elevenlabs/scribe-v2",
+      "scores": {
+        "DER": 30.34,
+        "DER ±0.25 s collar": 25.86,
+        "JER": 29.71,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Voxtral Mini Transcribe 2",
+      "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
+      "scores": {
+        "DER": 31.22,
+        "DER ±0.25 s collar": 22.02,
+        "JER": 30.34,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Grok Voice Transcribe 2.0",
+      "url": "https://docs.x.ai/developers/models/grok-voice-transcribe-2.0",
+      "scores": {
+        "DER": 31.33,
+        "DER ±0.25 s collar": 28.03,
+        "JER": 31.05,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "GPT-4o Transcribe Diarize",
+      "url": "https://platform.openai.com/docs/guides/speech-to-text",
+      "scores": {
+        "DER": 31.57,
+        "DER ±0.25 s collar": 20.38,
+        "JER": 31.28,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "MAI Transcribe 2 (direct)",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+      "scores": {
+        "DER": 32.36,
+        "DER ±0.25 s collar": 27.45,
+        "JER": 31.68,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Gemini 3.5 Transcribe",
+      "url": "https://openrouter.ai/google/gemini-3.5-transcribe",
+      "scores": {
+        "DER": 32.5,
+        "DER ±0.25 s collar": 24.93,
+        "JER": 32.78,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Qwen3-ASR 1.7B + FunASR speakers",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+      "scores": {
+        "DER": 32.91,
+        "DER ±0.25 s collar": 25.41,
+        "JER": 32.19,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Grok STT 1.0",
+      "url": "https://openrouter.ai/x-ai/grok-stt-1.0",
+      "scores": {
+        "DER": 34.28,
+        "DER ±0.25 s collar": 28.23,
+        "JER": 33.91,
+        "Speaker Count": 100
+      }
+    },
+    {
+      "name": "Muse Voice Transcribe 1.0",
+      "url": "https://dev.meta.ai/docs/speech-to-text",
+      "scores": {
+        "DER": 35.84,
+        "DER ±0.25 s collar": 25.56,
+        "JER": 34.16,
+        "Speaker Count": 50
+      }
+    }
+  ],
+  "stt": [
+    {
+      "name": "Scribe v2",
+      "url": "https://openrouter.ai/elevenlabs/scribe-v2",
+      "scores": {
+        "WER": 1.22,
+        "CER": 0.55
+      }
+    },
+    {
+      "name": "Reson8",
+      "url": "https://docs.reson8.dev/speech-to-text/prerecorded/",
+      "scores": {
+        "WER": 2.92,
+        "CER": 1.53
+      }
+    },
+    {
+      "name": "Grok Voice Transcribe 2.0",
+      "url": "https://docs.x.ai/developers/model-capabilities/audio/speech-to-text",
+      "scores": {
+        "WER": 2.94,
+        "CER": 1.52
+      }
+    },
+    {
+      "name": "Gemini 3.5 Transcribe",
+      "url": "https://openrouter.ai/google/gemini-3.5-transcribe",
+      "scores": {
+        "WER": 3.13,
+        "CER": 1.76
+      }
+    },
+    {
+      "name": "Muse Voice Transcribe 1.0",
+      "url": "https://dev.meta.ai/docs/speech-to-text",
+      "scores": {
+        "WER": 3.31,
+        "CER": 1.73
+      }
+    },
+    {
+      "name": "Nova-3",
+      "url": "https://openrouter.ai/deepgram/nova-3",
+      "scores": {
+        "WER": 3.42,
+        "CER": 2.05
+      }
+    },
+    {
+      "name": "Omi General",
+      "url": "https://docs.omi.health/",
+      "scores": {
+        "WER": 3.46,
+        "CER": 1.88
+      }
+    },
+    {
+      "name": "Chirp 3",
+      "url": "https://openrouter.ai/google/chirp-3",
+      "scores": {
+        "WER": 3.72,
+        "CER": 2.13
+      }
+    },
+    {
+      "name": "MAI-Transcribe 2",
+      "url": "https://openrouter.ai/microsoft/mai-transcribe-2",
+      "scores": {
+        "WER": 3.74,
+        "CER": 2.58
+      }
+    },
+    {
+      "name": "Nemotron 3 ASR Streaming (EN) 0.6B",
+      "url": "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b",
+      "scores": {
+        "WER": 4.11,
+        "CER": 2.26
+      }
+    },
+    {
+      "name": "Parakeet TDT 0.6B v3",
+      "url": "https://openrouter.ai/nvidia/parakeet-tdt-0.6b-v3",
+      "scores": {
+        "WER": 4.54,
+        "CER": 3.15
+      }
+    },
+    {
+      "name": "GPT Transcribe",
+      "url": "https://platform.openai.com/docs/guides/speech-to-text",
+      "scores": {
+        "WER": 4.58,
+        "CER": 2.79
+      }
+    },
+    {
+      "name": "Qwen3-ASR 1.7B",
+      "url": "https://openrouter.ai/qwen/qwen3-asr-1.7b",
+      "scores": {
+        "WER": 5.03,
+        "CER": 2.37
+      }
+    },
+    {
+      "name": "GPT-4o mini Transcribe",
+      "url": "https://platform.openai.com/docs/guides/speech-to-text",
+      "scores": {
+        "WER": 5.11,
+        "CER": 3.2
+      }
+    },
+    {
+      "name": "Universal-3.5 Pro",
+      "url": "https://openrouter.ai/assemblyai/universal-3-5-pro",
+      "scores": {
+        "WER": 5.13,
+        "CER": 3.5
+      }
+    },
+    {
+      "name": "Nemotron 3.5 ASR Streaming 0.6B",
+      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "scores": {
+        "WER": 5.87,
+        "CER": 3.58
+      }
+    },
+    {
+      "name": "Voxtral Mini Transcribe 2",
+      "url": "https://docs.mistral.ai/capabilities/audio/",
+      "scores": {
+        "WER": 6.59,
+        "CER": 4.74
+      }
+    },
+    {
+      "name": "GPT Realtime Whisper",
+      "url": "https://platform.openai.com/docs/guides/realtime-transcription",
+      "scores": {
+        "WER": 6.71,
+        "CER": 4.53
+      }
+    },
+    {
+      "name": "Cohere Transcribe",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "scores": {
+        "WER": 8.51,
+        "CER": 6.18
+      }
+    },
+    {
+      "name": "GPT-4o Transcribe",
+      "url": "https://platform.openai.com/docs/guides/speech-to-text",
+      "scores": {
+        "WER": 13.82,
+        "CER": 10.64
+      }
+    }
+  ]
+}
