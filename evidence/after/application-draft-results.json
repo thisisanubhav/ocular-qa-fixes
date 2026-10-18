@@ -1,0 +1,160 @@
+{
+  "browser": "Isolated Chromium",
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "results": [
+    {
+      "width": 320,
+      "passed": true,
+      "preservedFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone",
+        "currentTitle",
+        "currentCompany",
+        "linkedin",
+        "portfolio",
+        "challenge",
+        "note"
+      ],
+      "resume": "qa-resume.pdf",
+      "checks": [
+        "details round-trip",
+        "Escape and focus restoration",
+        "close and reopen",
+        "role isolation",
+        "cancel discard",
+        "local test retains draft",
+        "reload warning",
+        "explicit discard clears only active role",
+        "no overflow",
+        "no outbound application or upload"
+      ]
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "preservedFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone",
+        "currentTitle",
+        "currentCompany",
+        "linkedin",
+        "portfolio",
+        "challenge",
+        "note"
+      ],
+      "resume": "qa-resume.pdf",
+      "checks": [
+        "details round-trip",
+        "Escape and focus restoration",
+        "close and reopen",
+        "role isolation",
+        "cancel discard",
+        "local test retains draft",
+        "reload warning",
+        "explicit discard clears only active role",
+        "no overflow",
+        "no outbound application or upload"
+      ]
+    },
+    {
+      "width": 768,
+      "passed": true,
+      "preservedFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone",
+        "currentTitle",
+        "currentCompany",
+        "linkedin",
+        "portfolio",
+        "challenge",
+        "note"
+      ],
+      "resume": "qa-resume.pdf",
+      "checks": [
+        "details round-trip",
+        "Escape and focus restoration",
+        "close and reopen",
+        "role isolation",
+        "cancel discard",
+        "local test retains draft",
+        "reload warning",
+        "explicit discard clears only active role",
+        "no overflow",
+        "no outbound application or upload"
+      ]
+    },
+    {
+      "width": 1024,
+      "passed": true,
+      "preservedFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone",
+        "currentTitle",
+        "currentCompany",
+        "linkedin",
+        "portfolio",
+        "challenge",
+        "note"
+      ],
+      "resume": "qa-resume.pdf",
+      "checks": [
+        "details round-trip",
+        "Escape and focus restoration",
+        "close and reopen",
+        "role isolation",
+        "cancel discard",
+        "local test retains draft",
+        "reload warning",
+        "explicit discard clears only active role",
+        "no overflow",
+        "no outbound application or upload"
+      ]
+    },
+    {
+      "width": 1440,
+      "passed": true,
+      "preservedFields": [
+        "firstName",
+        "lastName",
+        "email",
+        "phone",
+        "currentTitle",
+        "currentCompany",
+        "linkedin",
+        "portfolio",
+        "challenge",
+        "note"
+      ],
+      "resume": "qa-resume.pdf",
+      "checks": [
+        "details round-trip",
+        "Escape and focus restoration",
+        "close and reopen",
+        "role isolation",
+        "cancel discard",
+        "local test retains draft",
+        "reload warning",
+        "explicit discard clears only active role",
+        "no overflow",
+        "no outbound application or upload"
+      ]
+    }
+  ],
+  "applicationRequests": 0,
+  "attachmentUploads": 0,
+  "persistence": "Per role, while the careers page remains open"
+}
