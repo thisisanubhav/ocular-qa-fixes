@@ -3,6 +3,7 @@ import {writeFile} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:768,height:1024},deviceScaleFactor:1});
+await page.emulateMedia({colorScheme:'dark',reducedMotion:'reduce'});
 const results={source:'https://www.useocular.com',capturedAt:new Date().toISOString()};
 const save=async(file,content)=>{
  await writeFile(file,content);execFileSync('git',['add','--',file]);
@@ -11,6 +12,7 @@ const save=async(file,content)=>{
 const shot=async name=>save(`evidence/before/${name}.png`,await page.screenshot());
 try{
  await page.goto('https://www.useocular.com/careers');await page.locator('header').waitFor();
+ const decline=page.getByRole('button',{name:"Don't allow",exact:true}).last();if(await decline.isVisible())await decline.click();
  results.navigation=await page.locator('header a,header button').evaluateAll(elements=>elements.map(el=>({name:el.getAttribute('aria-label')||el.textContent,x:el.getBoundingClientRect().x,right:el.getBoundingClientRect().right,width:el.getBoundingClientRect().width})));
  await shot('tablet-navigation');
  await page.setViewportSize({width:1440,height:900});
@@ -27,7 +29,7 @@ try{
   const labels=await page.locator('button').evaluateAll(elements=>elements.map(el=>el.getAttribute('aria-label')).filter(Boolean));
   console.log('Carousel labels:',labels);
  }
- await page.waitForTimeout(500);await shot('homepage-count');
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForTimeout(500);await shot('homepage-count');
  await save('evidence/before/reproduction.json',JSON.stringify(results,null,2));
  console.log('Production defects reproduced without submissions.');
 }finally{await browser.close();}
