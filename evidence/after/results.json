@@ -1,0 +1,627 @@
+{
+  "date": "2026-10-18T17:54:22.643Z",
+  "browser": "Isolated Chromium (Playwright, installed Chrome channel)",
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "results": [
+    {
+      "name": "home fits 320px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 320px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 320px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 320px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 320px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 320px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 320px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 320px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu at 320px",
+      "passed": true
+    },
+    {
+      "name": "Careers is reachable at 320px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard product submenu at 320px",
+      "passed": true
+    },
+    {
+      "name": "Escape returns submenu focus 320px",
+      "passed": true
+    },
+    {
+      "name": "Escape closes compact menu 320px",
+      "passed": true
+    },
+    {
+      "name": "home fits 390px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 390px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 390px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 390px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 390px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 390px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 390px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 390px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 390px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 390px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 390px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu at 390px",
+      "passed": true
+    },
+    {
+      "name": "Careers is reachable at 390px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard product submenu at 390px",
+      "passed": true
+    },
+    {
+      "name": "Escape returns submenu focus 390px",
+      "passed": true
+    },
+    {
+      "name": "Escape closes compact menu 390px",
+      "passed": true
+    },
+    {
+      "name": "home fits 768px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 768px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 768px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 768px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 768px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 768px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 768px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 768px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 768px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 768px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 768px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu at 768px",
+      "passed": true
+    },
+    {
+      "name": "Careers is reachable at 768px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard product submenu at 768px",
+      "passed": true
+    },
+    {
+      "name": "Escape returns submenu focus 768px",
+      "passed": true
+    },
+    {
+      "name": "Escape closes compact menu 768px",
+      "passed": true
+    },
+    {
+      "name": "home fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 1024px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 1024px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 1024px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 1024px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 1024px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard opens menu at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Careers is reachable at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Keyboard product submenu at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Escape returns submenu focus 1024px",
+      "passed": true
+    },
+    {
+      "name": "Escape closes compact menu 1024px",
+      "passed": true
+    },
+    {
+      "name": "home fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "home primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "home named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Diarization home counts at 1440px",
+      "passed": true
+    },
+    {
+      "name": "marketplace fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "marketplace primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "marketplace named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "contact fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "contact primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "contact named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Visible editable context at 1440px",
+      "passed": true
+    },
+    {
+      "name": "careers fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "careers primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "careers named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "diarization fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "diarization primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "diarization named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "12 leaderboard models at 1440px",
+      "passed": true
+    },
+    {
+      "name": "stt fits 1440px",
+      "passed": true
+    },
+    {
+      "name": "stt primary CTA visible at 1440px",
+      "passed": true
+    },
+    {
+      "name": "stt named home links at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Desktop submenu keyboard traversal",
+      "passed": true
+    },
+    {
+      "name": "Accessibility tree exposes both home links by name",
+      "passed": true
+    },
+    {
+      "name": "Skip link moves focus to main",
+      "passed": true
+    },
+    {
+      "name": "Marketplace starts with six cards",
+      "passed": true
+    },
+    {
+      "name": "Marketplace second page contains next six distinct datasets",
+      "passed": true
+    },
+    {
+      "name": "Language filter resets pagination",
+      "passed": true
+    },
+    {
+      "name": "Marketplace request sample link carries visible subject",
+      "passed": true
+    },
+    {
+      "name": "Required form validation blocks empty submission",
+      "passed": true
+    },
+    {
+      "name": "Edited context and selections reach the mock API payload",
+      "passed": true
+    },
+    {
+      "name": "Failed submission retains edits and enables retry",
+      "passed": true
+    },
+    {
+      "name": "hi-fi inquiry context preserved",
+      "passed": true
+    },
+    {
+      "name": "tts-voices inquiry context preserved",
+      "passed": true
+    },
+    {
+      "name": "audiovisual inquiry context preserved",
+      "passed": true
+    },
+    {
+      "name": "proprietary inquiry context preserved",
+      "passed": true
+    },
+    {
+      "name": "open-source inquiry context preserved",
+      "passed": true
+    },
+    {
+      "name": "Direct contact starts with an empty editable subject",
+      "passed": true
+    },
+    {
+      "name": "Query context is treated as text",
+      "passed": true
+    },
+    {
+      "name": "Empty catalogue search is recoverable",
+      "passed": true
+    },
+    {
+      "name": "Clear filter restores catalogue",
+      "passed": true
+    },
+    {
+      "name": "diarization metric control updates ranked scores",
+      "passed": true
+    },
+    {
+      "name": "diarization model access filter",
+      "passed": true
+    },
+    {
+      "name": "diarization empty model search",
+      "passed": true
+    },
+    {
+      "name": "stt metric control updates ranked scores",
+      "passed": true
+    },
+    {
+      "name": "stt model access filter",
+      "passed": true
+    },
+    {
+      "name": "stt empty model search",
+      "passed": true
+    },
+    {
+      "name": "Privacy dialog opens",
+      "passed": true
+    },
+    {
+      "name": "Privacy dialog closes with Escape",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "productionSubmissions": 0
+}
