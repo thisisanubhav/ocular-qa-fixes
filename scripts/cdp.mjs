@@ -9,5 +9,6 @@ export async function connect(){
  const wait=async expression=>{for(let i=0;i<100;i++){if(await evaluate(`Boolean(${expression})`))return;await new Promise(r=>setTimeout(r,100))}throw new Error(`Not ready: ${expression}`)};
  const navigate=async url=>{await send('Page.navigate',{url});await wait('document.readyState === "complete"');};
  const viewport=(width,height=900)=>send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
- return {send,evaluate,wait,navigate,viewport,close:()=>ws.close()};
+ const on=(method,handler)=>ws.addEventListener('message',event=>{const message=JSON.parse(event.data);if(message.method===method)handler(message.params)});
+ return {send,evaluate,wait,navigate,viewport,on,close:()=>ws.close()};
 }
