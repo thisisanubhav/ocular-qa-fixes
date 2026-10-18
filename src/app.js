@@ -1,3 +1,4 @@
+import { careerOpenings, bindCareerApplications } from "./careers.js";
 import { datasets, products, interests, useCases, research } from "./data.js";
 import {
   escapeHTML as e,
@@ -236,7 +237,7 @@ function productPage(product) {
   return `<div class="wrap"><section class="page-heading">${kicker(product.eyebrow)}<h1>${product.name}</h1><p>${product.description}</p><div class="button-row">${button("Talk to sales", inquiryURL(product.subject || `${product.name} inquiry`))}${button("Browse datasets", "/human-data/marketplace", "secondary")}</div></section><div class="detail-wave">${wave(5)}</div><section class="section detail-grid"><h2>Make your next model<br>more human.</h2><div><p>Start with your use case. Discuss the languages, recording formats, and evaluation goals that matter to your team.</p><a class="text-link" href="${e(inquiryURL(product.subject || `${product.name} inquiry`))}">Discuss your requirements ${arrow}</a></div></section></div>`;
 }
 function careers() {
-  return `<div class="wrap"><section class="page-heading">${kicker("Build with us")}<h1>Careers</h1><p>Help build the next generation of human-centered AI.</p></section><section class="detail-grid section"><h2>Curiosity. Craft.<br>Real-world impact.</h2><div><p>Ocular brings together researchers, engineers, and domain experts to turn human knowledge into better AI.</p><p>Explore current openings on the official careers page for role details and application instructions.</p>${button("View current openings", "https://www.useocular.com/careers")}</div></section><section class="values-grid">${[
+  return `<div class="wrap"><section class="page-heading">${kicker("Build with us")}<h1>Careers</h1><p>Help build the next generation of human-centered AI.</p></section><section class="detail-grid section"><h2>Curiosity. Craft.<br>Real-world impact.</h2><div><p>Ocular brings together researchers, engineers, and domain experts to turn human knowledge into better AI.</p><p>Explore current openings on the official careers page for role details and application instructions.</p>${button("View current openings", "https://www.useocular.com/careers")}</div></section>${careerOpenings()}<section class="values-grid">${[
     [
       "Customer-driven",
       "Understand the problem deeply. Build something useful.",
@@ -311,6 +312,7 @@ if (path === "/") {
 } else if (path === "/careers") {
   content = careers();
   title = "Careers";
+  bind = bindCareerApplications;
 } else if (path === "/blog") {
   content = blog();
   title = "Blog";
