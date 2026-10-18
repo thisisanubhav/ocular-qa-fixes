@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18T17:54:22.643Z",
+  "date": "2026-10-18T17:56:40.976Z",
   "browser": "Isolated Chromium (Playwright, installed Chrome channel)",
   "widths": [
     320,
@@ -95,6 +95,14 @@
     },
     {
       "name": "Keyboard opens menu at 320px",
+      "passed": true
+    },
+    {
+      "name": "Opening menu moves keyboard focus inside at 320px",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches Products at 320px",
       "passed": true
     },
     {
@@ -202,6 +210,14 @@
       "passed": true
     },
     {
+      "name": "Opening menu moves keyboard focus inside at 390px",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches Products at 390px",
+      "passed": true
+    },
+    {
       "name": "Careers is reachable at 390px",
       "passed": true
     },
@@ -306,6 +322,14 @@
       "passed": true
     },
     {
+      "name": "Opening menu moves keyboard focus inside at 768px",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches Products at 768px",
+      "passed": true
+    },
+    {
       "name": "Careers is reachable at 768px",
       "passed": true
     },
@@ -407,6 +431,14 @@
     },
     {
       "name": "Keyboard opens menu at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Opening menu moves keyboard focus inside at 1024px",
+      "passed": true
+    },
+    {
+      "name": "Tab reaches Products at 1024px",
       "passed": true
     },
     {
