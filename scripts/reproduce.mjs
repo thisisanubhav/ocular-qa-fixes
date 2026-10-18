@@ -1,11 +1,42 @@
-import {connect} from './cdp.mjs';import {writeFile} from 'node:fs/promises';
-const c=await connect();const results={};
-const shot=async name=>{const r=await c.send('Page.captureScreenshot',{format:'png'});await writeFile(`evidence/before/${name}.png`,Buffer.from(r.data,'base64'))};
-await c.viewport(768,1024);await c.navigate('https://www.useocular.com/careers');await c.wait('document.querySelector("header")');
-results.navigation=await c.evaluate(`Array.from(document.querySelectorAll('header a,header button')).map(el=>({name:el.getAttribute('aria-label')||el.textContent, x:el.getBoundingClientRect().x,right:el.getBoundingClientRect().right,width:el.getBoundingClientRect().width}))`);await shot('tablet-navigation');
-await c.viewport(1440);await c.navigate('https://www.useocular.com/contact?subject=Sample%20request%3A%20Hindi%20Full-Duplex%20Conversational%20Dataset');await c.wait('document.querySelector("textarea")');
-results.context=await c.evaluate(`({url:location.href,fields:Array.from(document.querySelectorAll('input,textarea')).map(e=>({name:e.name,value:e.value})),visibleSubject:document.body.innerText.includes('Hindi Full-Duplex')})`);
-results.logos=await c.evaluate(`Array.from(document.querySelectorAll('header a[href="/"],footer a[href="/"]')).map(e=>({text:e.textContent,label:e.getAttribute('aria-label'),title:e.getAttribute('title')}))`);await shot('contact-context');
-await c.navigate('https://www.useocular.com/');await c.wait('document.body.innerText.includes("11 models")');
-results.count=await c.evaluate(`({eleven:document.body.innerText.includes('11 models'),twelve:document.body.innerText.includes('12')})`);await c.evaluate(`(()=>{const buttons=Array.from(document.querySelectorAll('button')); const b=buttons.find(b=>/slide 3/i.test(b.getAttribute('aria-label')||''));b?.click();return buttons.map(b=>b.getAttribute('aria-label')).filter(Boolean)})()`);await shot('homepage-count');
-await writeFile('evidence/before/reproduction.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results,null,2));c.close();
+import { connect } from "./cdp.mjs";
+import { writeFile } from "node:fs/promises";
+const c = await connect();
+const results = {};
+const shot = async (name) => {
+  const r = await c.send("Page.captureScreenshot", { format: "png" });
+  await writeFile(`evidence/before/${name}.png`, Buffer.from(r.data, "base64"));
+};
+await c.viewport(768, 1024);
+await c.navigate("https://www.useocular.com/careers");
+await c.wait('document.querySelector("header")');
+results.navigation = await c.evaluate(
+  `Array.from(document.querySelectorAll('header a,header button')).map(el=>({name:el.getAttribute('aria-label')||el.textContent, x:el.getBoundingClientRect().x,right:el.getBoundingClientRect().right,width:el.getBoundingClientRect().width}))`,
+);
+await shot("tablet-navigation");
+await c.viewport(1440);
+await c.navigate(
+  "https://www.useocular.com/contact?subject=Sample%20request%3A%20Hindi%20Full-Duplex%20Conversational%20Dataset",
+);
+await c.wait('document.querySelector("textarea")');
+results.context = await c.evaluate(
+  `({url:location.href,fields:Array.from(document.querySelectorAll('input,textarea')).map(e=>({name:e.name,value:e.value})),visibleSubject:document.body.innerText.includes('Hindi Full-Duplex')})`,
+);
+results.logos = await c.evaluate(
+  `Array.from(document.querySelectorAll('header a[href="/"],footer a[href="/"]')).map(e=>({text:e.textContent,label:e.getAttribute('aria-label'),title:e.getAttribute('title')}))`,
+);
+await shot("contact-context");
+await c.navigate("https://www.useocular.com/");
+await c.wait('document.body.innerText.includes("11 models")');
+results.count = await c.evaluate(
+  `({eleven:document.body.innerText.includes('11 models'),twelve:document.body.innerText.includes('12')})`,
+);
+await c.evaluate(
+  `(()=>{const buttons=Array.from(document.querySelectorAll('button')); const b=buttons.find(b=>/slide 3/i.test(b.getAttribute('aria-label')||''));b?.click();return buttons.map(b=>b.getAttribute('aria-label')).filter(Boolean)})()`,
+);
+await shot("homepage-count");
+await writeFile(
+  "evidence/before/reproduction.json",
+  JSON.stringify(results, null, 2),
+);
+console.log(JSON.stringify(results, null, 2));
+c.close();
